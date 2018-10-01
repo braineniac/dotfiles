@@ -36,12 +36,12 @@ sudo pacman -S maxima wxmaxima --noconfirm
 wget https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4.glibc2.17-x86_64.AppImage -O /home/$USER/bin/
 
 #virt
-sudo pacman -S qemu docker ovmf virt-manager --noconfirm
+sudo pacman -S qemu qemu-arch-extra docker ovmf virt-manager --noconfirm
 sudo systemctl start libvirtd
 sudo systemctl enable libvirtd
 sudo virsh net-autostart --network default
-sudo systemctl enable dockerd
-sudo systemctl start dockerd
+sudo systemctl enable docker
+sudo systemctl start docker
 
 #disable ipv6 for vlc to see upnp
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
