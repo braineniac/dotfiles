@@ -2,7 +2,7 @@
 
 sudo pacman -R gvim --noconfirm
 sudo pacman -Suy --noconfirm
-sudo pacman -S msbuild-stable go cmake stow syncthing-gtk vim --noconfirm
+sudo pacman -S cmake stow syncthing-gtk vim --noconfirm
 
 ###symlinks###
 cd /home/$USER/.dotfiles
@@ -29,3 +29,20 @@ aurman -S vim-youcompleteme-git nerd-fonts-complete --noconfirm --pgp_fetch --sk
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 /home/dan/.vim/bundle/YouCompleteMe/install.sh --all
+
+#dev
+sudo pacman -S screen arduino kicad --noconfirm
+sudo pacman -S maxima wxmaxima --noconfirm
+wget https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4.glibc2.17-x86_64.AppImage -O /home/$USER/bin/
+
+#virt
+sudo pacman -S qemu docker ovmf virt-manager --noconfirm
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
+sudo virsh net-autostart --network default
+sudo systemctl enable dockerd
+sudo systemctl start dockerd
+
+#disable ipv6 for vlc to see upnp
+sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+
