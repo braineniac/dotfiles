@@ -50,8 +50,8 @@ set $WS7 "7: "
 set $WS8 "8: "
 
 # monitors
-set $Mon1 HDMI1
-set $Mon2 HDMI2
+set $Mon1 DP-2
+set $Mon2 HDMI-1-1
 
 #####################################################
 ###############     Autostart      ##################
@@ -259,9 +259,9 @@ for_window [class="(?i)(?:geany|firefox)"] focus
 
 # Assign Applications to specific workspace
 # get class with xprop
-assign [class="(?i)(?:firefox)"] → $WS1
-assign [class="(?i)(?:geany)"] → $WS2
-assign [class="(?i)(?:thunar)"] → $WS3
+#assign [class="(?i)(?:firefox)"] → $WS1
+#assign [class="(?i)(?:geany)"] → $WS2
+#assign [class="(?i)(?:thunar)"] → $WS3
 
 # focus, floating, & sticky
 for_window [title="(?i)(?:copying|deleting|moving)"] floating enable
@@ -301,5 +301,5 @@ bindsym $mod+r mode "resize"
 bindsym --release $mod+z exec scrot -s /home/dan/Pictures/screenshots/%b%d::%H%M%S.png
 exec_always setxkbmap -option grp:alt_shift_toggle "us,de,hu"
 
-exec_always feh --bg-scale --randomize /home/dan/Pictures/Wallpapers
+exec_always feh --bg-scale --randomize /home/dan/pictures/wallpapers
 exec_always /home/dan/.screenlayout.sh

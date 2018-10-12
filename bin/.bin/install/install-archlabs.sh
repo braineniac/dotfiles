@@ -2,7 +2,7 @@
 
 sudo pacman -R gvim --noconfirm
 sudo pacman -Suy --noconfirm
-sudo pacman -S cmake stow syncthing-gtk vim --noconfirm
+sudo pacman -S lxappearance feh cmake stow syncthing-gtk vim --noconfirm
 
 ###symlinks###
 cd /home/$USER/.dotfiles
@@ -17,7 +17,6 @@ mv /home/$USER/.config/termite /home/$USER/.config/.termite-old
 mv /home/$USER/.config/tint2 /home/$USER/.config/.tint2-old
 mv /home/$USER/.vimrc /home/$USER/.vimrc-old
 mv /home/$USER/.zshrc /home/$USER/.zshrc-old
-mv /home/$USER/.zprofile /home/$USER/.zprofile-old
 mv /home/$USER/.Xresources /home/$USER/.Xresources-old
 
 #stow
@@ -33,7 +32,8 @@ vim +PluginInstall +qall
 #dev
 sudo pacman -S screen arduino kicad --noconfirm
 sudo pacman -S maxima wxmaxima --noconfirm
-wget https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4.glibc2.17-x86_64.AppImage -O /home/$USER/bin/
+wget https://github.com/FreeCAD/FreeCAD/releases/download/0.17/FreeCAD-0.17.13541.9948ee4.glibc2.17-x86_64.AppImage -O /home/$USER/bin/FreeCAD-0.17.13541.AppImage
+chmod +x /home/$USER/bin/FreeCAD-0.17.13541.AppImage
 
 #virt
 sudo pacman -S qemu qemu-arch-extra docker ovmf virt-manager --noconfirm

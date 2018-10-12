@@ -47,3 +47,5 @@ alias mirrors='sudo reflector --score 100 --fastest 25 \
     --sort rate --save /etc/pacman.d/mirrorlist --verbose'
 
 al-info
+PATH="/home/dan/.bin":$PATH
+PATH="/snap/bin":$PATH

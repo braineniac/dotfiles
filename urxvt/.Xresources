@@ -21,7 +21,7 @@
 *.color15: #c5c8c6
 
 ! Rofi
-rofi.font: DejaVu Sans Mono 12
+rofi.font: DejaVuSansMono Nerd Font 13
 rofi.padding: 20
 rofi.line-padding: 2
 rofi.color-enabled: true
@@ -34,7 +34,7 @@ rofi.color-active: argb:00000000, #49bbfb, argb:00000000, argb:00000000, #e29a49
 
 ! xterm
 xterm*font: DejaVu Sans Mono
-xterm*faceName: DejaVu Sans Mono:size=11:antialias=false
+xterm*faceName: DejaVuSansMono Nerd Font:size=13:antialias=false
 xterm*loginShell: true
 xterm*vt100*geometry: 90x34
 xterm*saveLines: 2000
@@ -53,7 +53,7 @@ URxvt*scrollBar_right: false
 URxvt*internalBorder: 0
 URxvt*externalBorder: 0
 URxvt*letterSpace: -1
-URxvt.font: xft:DejaVu Sans Mono:size=11
+URxvt.font: xft:DejaVuSansMono Nerd Font:size=13
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
@@ -73,7 +73,7 @@ URxvt*buffered: false
 UXTerm*termName: xterm-256color
 UXTerm*cursorColor: white
 UXTerm*VT100.geometry: 90x30
-UXTerm*font: DejaVu Sans Mono
+UXTerm*font: xft:DejaVuSansMono Nerd Font:size=13
 UXTerm*faceSize: 10
 UXTerm*dynamicColors: true
 UXTerm*utf8: 2

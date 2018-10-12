@@ -15,7 +15,7 @@ include-file = /home/dan/.config/polybar/modules.conf
 inherit = bar/master
 
 ; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
-monitor = DisplayPort-0
+monitor = DP-2
 
 modules-left   = jgmenu workspaces
 modules-center = window_switch clock
@@ -30,7 +30,7 @@ modules-right  = temperature pkg network volume
 inherit = bar/master
 
 ; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
-monitor = DisplayPort-0
+monitor = 
 
 modules-left   = jgmenu i3
 modules-center = clock
