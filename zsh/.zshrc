@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/usr/share/oh-my-zsh"
+  export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -92,3 +92,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+source /home/dan/ros_catkin_ws/install_isolated/setup.zsh
+ytd() {
+	youtube-dl $1 --no-check-certificate -f best -x -k --audio-format mp3
+}
