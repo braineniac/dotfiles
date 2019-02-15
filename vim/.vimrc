@@ -99,3 +99,5 @@ let g:airline_powerline_fonts = 1
 let g:airline_section_z = airline#section#create(['windowswap', '%3p%% ','linenr', ':%3v'])
 set linespace=0
 hi Normal ctermbg=NONE
+
+set tabstop=2

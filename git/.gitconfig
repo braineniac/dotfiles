@@ -1,3 +1,5 @@
 [user]
 	email = braineniac@protonmail.com
 	name = Daniel Hammer
+[push]
+	default = simple
