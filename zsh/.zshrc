@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/dan/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -104,3 +104,8 @@ fi
 if [ -f /usr/share/vcstool-completion/vcs.zsh ]; then
 				. /usr/share/vcstool-completion/vcs.zsh
 fi
+
+# youtube downloader
+ytd() {
+	youtube-dl $1 --no-check-certificate -f best -x -k --audio-format mp3
+}

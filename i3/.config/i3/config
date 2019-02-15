@@ -156,7 +156,7 @@ bindsym $mod+r mode "resize"
 #        status_command i3blocks -c /home/dan/.config/i3/i3blocks.conf
 #}
 
-exec_always feh --bg-scale --randomize /home/dan/pictures/Wallpapers
+exec_always feh --bg-scale --randomize /home/dan/pictures/wallpapers
 exec_always xrdb -load /home/dan/.Xresources
 exec_always --no-startup-id /home/dan/.config/polybar/polybar.sh
 
@@ -165,17 +165,16 @@ bindsym $mod+o mode "open"
 
 mode "open" {
 	# This mode is used to open programs
-	#bindsym f exec firefox
-	bindsym c exec chromium
+	bindsym w exec vivaldi-stable
 	bindsym n exec nemo /home/dan
 
 	bindsym Escape mode "default"
 	bindsym Return mode "default"
 	}
 	
-smart_gaps on
-gaps inner 7
-gaps outer 3
+#smart_gaps on
+#gaps inner 7
+#gaps outer 3
 
 # border / titlebar
 new_window 1pixel
@@ -195,3 +194,4 @@ for_window [class="Feh"] border pixel 0
 
 bindsym --release $mod+z exec scrot -s /home/dan/Pictures/%b%d::%H%M%S.png
 exec_always setxkbmap -option grp:alt_shift_toggle "us,de,hu"
+force_xinerama=yes

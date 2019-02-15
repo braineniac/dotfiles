@@ -19,17 +19,17 @@
 *.color3:      #ff0099
 *.color11:     #ff0099
 ! blue
-*.color4:      #0066ff
-*.color12:     #0066ff
+.color4:      #0066ff
+.color12:     #0066ff
 ! magenta
-*.color5:      #cc00ff
-*.color13:     #cc00ff
+.color5:      #cc00ff
+.color13:     #cc00ff
 ! cyan
-*.color6:      #00ffff
-*.color14:     #00ffff
+.color6:      #00ffff
+.color14:     #00ffff
 ! white
-*.color7:      #d0d0d0
-*.color15:     #ffffff
+.color7:      #d0d0d0
+.color15:     #ffffff
 
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
@@ -37,7 +37,8 @@ URxvt*scrollBar_right:   false
 URxvt*transparent:       true
 URxvt.shading:		 20
 
-URxvt.font: xft:DejaVuSansMono\ Nerd\ Font:antialias=true:autohinting=true:pixelsize=15
+URxvt.font: xft:DejaVuSansMono\ Nerd\ Font:antialias=true:autohinting=true:pixelsize=23
 URxvt.letterSpace: 0
 *antialias:  true
 *autohint: false
+Xft.dpi: 140
