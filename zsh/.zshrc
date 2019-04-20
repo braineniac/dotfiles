@@ -74,8 +74,6 @@ export LANG=en_US.UTF-8
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
-else
-   export EDITOR='mvim'
 fi
 
 # Compilation flags
@@ -96,8 +94,8 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 ZSH_DISABLE_COMPFIX=true
 
 # workspace setup
-if [ -f ~/.ws ]; then
-				. ~/.ws
+if [ -f $HOME/.ws ]; then
+				. $HOME/.ws
 fi
 
 # vcstool autocomplete
@@ -105,7 +103,6 @@ if [ -f /usr/share/vcstool-completion/vcs.zsh ]; then
 				. /usr/share/vcstool-completion/vcs.zsh
 fi
 
-# youtube downloader
-ytd() {
-	youtube-dl $1 --no-check-certificate -f best -x -k --audio-format mp3
-}
+if [ -d $HOME/.bin ]; then
+				PATH="$PATH:$HOME/.bin"
+fi

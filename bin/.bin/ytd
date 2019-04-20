@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+youtube-dl $1 --no-check-certificate -f best -x -k --audio-format mp3
+

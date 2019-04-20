@@ -159,6 +159,7 @@ bindsym $mod+r mode "resize"
 exec_always feh --bg-scale --randomize /home/dan/pictures/wallpapers
 exec_always xrdb -load /home/dan/.Xresources
 exec_always --no-startup-id /home/dan/.config/polybar/polybar.sh
+exec_always pulseaudio -k && pulseaudio --start
 
 #set "open" Launch: [f]irefox
 bindsym $mod+o mode "open"
