@@ -106,3 +106,11 @@ fi
 if [ -d $HOME/.bin ]; then
 				PATH="$PATH:$HOME/.bin"
 fi
+
+if [ -f /opt/ros/melodic/local_setup.zsh ]; then
+				. /opt/ros/melodic/setup.zsh
+fi
+
+if [ -n "$SINGULARITY_CONTAINER" ]; then
+				PS1="("$(echo ${$(basename $(echo $SINGULARITY_CONTAINER))%.*})") "$PS1
+fi
