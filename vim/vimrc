@@ -1,0 +1,35 @@
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
+	Plugin 'gmarik/Vundle.vim'
+
+" Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'tpope/vim-fugitive'
+	Plugin 'airblade/vim-gitgutter'
+	Plugin 'vim-airline/vim-airline'
+	Plugin 'vim-airline/vim-airline-themes'
+	
+	" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent off    " required
+
+set encoding=utf-8
+
+syntax on
+
+" use spaces instead of tabs
+set tabstop=2 shiftwidth=2 expandtab
+
+" Sets relative numbering of lines 
+set relativenumber
+
+" Clipboard
+set clipboard=unnamed
+
+" enable airline theme
+let g:airline_theme = 'simple'
+let g:airline_powerline_fonts = 1
